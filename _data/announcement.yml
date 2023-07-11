@@ -1,0 +1,14 @@
+visible: true
+
+# For mobile devices
+small: "Connect with us on discord to stay updated."
+
+# For tablets and higher screen resolution
+large: "Connect with us on discord to stay updated on the blog's development."
+
+link:
+  visible: true
+  text: "Join >"
+  url: "https://discord.genicsblog.com"
+  target: "_blank"
+  rel: "nofollow noopener noreferrer"

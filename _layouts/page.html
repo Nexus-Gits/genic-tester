@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<article class="elevated md:text-lg m-8 md:m-10 lg:m-14 p-6 md:p-8">{{ content | extlinks | optimize_images }}</article>
+
+{% if page.showlatest %}
+<div class="m-8 md:m-10 lg:m-14">{% include latestposts.html %}</div>
+{% endif %}
