@@ -3,8 +3,8 @@ email: contact@genicsblog.com
 description: >-
   An open source developer publication aimed at sharing well explained
   tutorials on various topics for the developer community.
-baseurl: "https://genic-tester.vercel.app"
-url: "https://genic-tester.vercel.app"
+baseurl: ""
+url: "/"
 permalink: /:title
 twitter_username: "genicsblog"
 github_username: "genicsblog"
