@@ -3,147 +3,56 @@ layout: post
 title:  "5 html methodologies you need to know in 2023"
 excerpt: "CSS methodogies lets us author CSS in a way that allows us to develop, maintain and scale the front-end as a set of small, isolated modules."
 image: "https://user-images.githubusercontent.com/46792249/150502332-2a32ea09-672f-4d7d-935f-619130c53fd8.png"
-audioId: 3467005
 category: web
 tags: ["beginners", "web-development"]
 author: abhiraj
 ---
 
-In large, complicated, rapidly-iterated systems, CSS is notoriously difficult to maintain. The lack of a built-in scoping mechanism in CSS is one of the reasons.
+However, there are some key differences in features, pricing, and approach. In this article, we’ll compare VidIQ and TubeBuddy in depth so you can determine which tool is the best fit for your YouTube channel.
 
-In CSS, everything is global. Until CSS gets its native scoping mechanism, we need to devise our own system for locking down styles to specific sections of an HTML document. CSS methodologies are the solution.
-  
-In this article, we will take a look at the CSS methodologies you need to know in 2022!
+Here's a markdown block table comparing VidIQ and TubeBuddy at a glance:
 
-## 1. Object-oriented CSS
+|  | VidIQ | TubeBuddy |
+| --- | --- | --- |
+| Channel Size | Medium to large channels | Any size channel |
+| Key Features | End-to-end optimization: SEO, audits, management, analytics, monetization | Essential optimization: Keyword research, audits, editing, basic analytics |
+| Pricing | Free limited plan. Paid plans from $7.50/month | Robust free plan. Paid plans from $9/month |
+| Updates | Monthly updates | Quarterly updates |
+| Browser extension | Works in Chrome and Firefox | Works in Safari, Firefox, and Chrome |
+| Retention Analysis | No retention analysis testing feature | In-built tool identifies watch time and where most drop-offs occur |
+| App Integration | Only integrates with Facebook and TikTok | Integrates with Patreon, Twitter, MagicLinks, Social Bluebook, Facebook, and Amazon |
+| A/B Testing | No A/B testing feature | Can test thumbnails, titles, and descriptions |
+| Support | All plans: Live chat, email, phone. Priority for paid. | Paid plans only: Email and help center. |
+| Verdict | Best all-in-one solution, especially for larger and monetized channels. | Simple but useful toolkit, perfect for smaller channels. Free plan to start. |
 
-[OOCSS](http://oocss.org/) concepts help us write components that are flexible, modular and interchangeable.
+For details on how these platforms compare based on factors like features, pricing, updates, and support, see the full article below. The right tool for your YouTube channel depends on your unique needs and goals. Using both VidIQ and TubeBuddy together may provide the most comprehensive optimization strategy.
 
-For example, the style of your button elements might be set via two classes that you have given the class of:
 
-- `.button` — Provides the button’s basic structure.
-- `.grey-btn` — Applies colors and other visual properties.
+## Keyword Research and Tagging
 
-CSS:
-```css
-.button {
-    box-sizing: border-box;
-    height: 50px;
-    width: 100%;
-}
+![vidiq review](/assets/tecroxy-images/vidiq_review.webp)
 
-.grey-btn {
-    background: #EEE;
-    border: 1px solid #DDD;
-    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
-    color: #555;
-}
-```
+Effective keyword research and tagging are essential for YouTube SEO. Both VidIQ and TubeBuddy provide keyword suggestion tools to help you find popular search terms related to your video topic. They also allow you to compare search volume and difficulty to determine keywords with the best potential.
 
-HTML:
-```html
-<button class="button grey-btn">
-    Click me!
-</button>
-```
+Where the tools differ is in their approach to keyword tagging. VidIQ provides an inline keyword tagging tool that lets you add keywords directly to your video titles, descriptions, and tags while editing. TubeBuddy’s keyword tool is more manual, providing suggestions that you then add yourself.
 
-## 2. Atomic CSS
+For a hands-on approach to keyword optimization, VidIQ’s inline tool could save time. However, TubeBuddy may provide more granular control over exactly which keywords you target. For most YouTubers, either tool would work well for keyword research and tagging, so this difference comes down to personal preference.
 
-[Atomic CSS](https://acss.io/) is the approach to CSS architecture that favors small, single-purpose classes with names based on visual function.
+## Channel Audits and Optimization
 
-Example:
+In addition to individual videos, it’s important to optimize your entire YouTube channel. Both VidIQ and TubeBuddy offer channel audit features that analyze your channel and provide recommendations to improve SEO, engagement, and monetization.
 
-Colors are set using hexadecimal values. Alpha transparency is created by appending the opacity value to the hex color.
+VidIQ’s channel audit tool provides an overall score for your channel, as well as scores for video SEO, playlists, channel art, and more. You get specific recommendations for how to improve each area. TubeBuddy’s channel audit also provides optimization tips, although in a simpler format without the scoring system.
 
-```html
-<div class="Bgc(#0280ae.5) C(#fff) P(20px)">
-    Lorem ipsum
-</div>
-```
+For an in-depth review and benchmarks to work towards, VidIQ’s channel audits are very useful. However, TubeBuddy’s more lightweight recommendations can also help point you in the right direction for channel optimization. For the best results, you could use VidIQ for a full channel audit, then turn to TubeBuddy for ongoing optimization suggestions.
 
-## 3. BEM
+## Video Uploads and Management
 
-[Block Element Modifier](http://getbem.com/) is a methodology that helps you to create reusable components and code sharing in front-end development.
+A major part of YouTube optimization is managing your actual video uploads. Both VidIQ and TubeBuddy provide tools to help with uploading, editing video details, creating playlists, and more.
+VidIQ has a robust video management dashboard where you can see all your uploads, view stats, and make changes. 
 
-Example:
+You can add video details like titles, descriptions, tags, thumbnails, and end screens in one place. VidIQ also has a bulk editor tool to quickly optimize details for multiple videos at once.
 
-```html
-<form class="loginform loginform--errors">
-    <label class="loginform__username loginform__username--error"> 
-        Username <input type="text" name="username" />
-    </label>
-    <label class="loginform__password">
-        Password <input type="password" name="password" />
-    </label>
-    <button class="loginform__btn loginform__btn--inactive">
-        Sign in
-    </button>
-</form>
-```
+TubeBuddy’s video management features are more basic but still useful. You can view and edit video details, create playlists, and see video stats. However, there’s no bulk editor or centralized dashboard. You have to access each video individually to make changes.
 
-The `.loginform` class is a block composed of three elements:
-
-| Element                      | Purpose               |   
-|------------------------------|-----------------------|
-| loginform__username	       | Takes in the username |   
-| loginform__password          | Takes in the password |   
-| loginform__btn               | Allow the user to submit the web form |   
-
-## 4. SMA CSS
-
-[SMACSS](http://smacss.com/) is a way to examine your design process and as a way to fit those rigid frameworks into a flexible thought process.
-
-Example:
-
-Let’s say our layout is called `.l-footer`. We have a search form module inside it. The search form has already been submitted at least once by the user.
-
-```html
-<section class="l-footer">
-    <form class="search is-submitted">
-        <input type="search" />
-        <input type="button" value="Search">
-    </form>
-</section>
-```
-
-## 5. Systematic CSS
-
-[Systematic CSS](https://www.yumpu.com/en/document/read/47573458/systematic-css) shares many of the principles and ideas you can find in OOCSS, BEM, SMACSS, SUIT CSS, and other CSS methodologies. Systematic CSS is meant to be a simpler alternative to existing CSS methodologies. 
-
-Example:
-
-Here’s the markup for two widgets that render a navigation bar and search form:
-
-```html
-<!-- navigation bar --> 
-<div class="NavBar">
-   <ul>
-      <li><a href="./">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="learn/">Learn</a></li>
-      <li><a href="extend/">Extend</a></li>
-      <li><a href="share/">Share</a></li>
-   </ul>
-</div>
-
-<!-- search form --> 
-<div class="SearchBox">
-   <form action="search.html" method="get">
-       <label for="input-search">Search</label>
-       <input name="q" type="search" id="input-search" />
-       <button type="submit">Search</button>
-    </form>
-</div>
-```
-
-Content — in the form of widgets and naked HTML elements — is then placed within the layout. Finally, modifier classes are added to vary the default presentation of things.
-
-## Conclusion
-
-By providing a class-based approach for dividing up large web designs into many small, modular, distinct components, all CSS techniques address the scalability and maintainability challenge in CSS.
-
-Each UI module can be reused throughout a design and even ported from one project to the next if the CSS methodologies are the same. CSS approaches do a lot more than just solving the CSS scalability issue.
-
-### Thank you for reading
-
-If you liked this post, subscribe to [my newsletter](https://abhirajbhowmick.substack.com){:rel="dofollow"} to never miss out on [my articles](https://abhiraj.co){:rel="dofollow"}, product launches, and tech news!
+For managing a large YouTube channel with many videos, VidIQ’s advanced video tools would likely save a significant amount of time. TubeBuddy can still work for video management but may require more manual effort, especially for bigger channels.
