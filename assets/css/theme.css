@@ -74,15 +74,15 @@
 
   td,
   th {
-    @apply px-3 py-2 text-center;
+    @apply px-2 py-1 text-center;
   }
 
   ul li {
-    @apply list-disc list-outside ml-14;
+    @apply list-disc list-outside ml-12;
   }
 
   ol li {
-    @apply list-decimal list-outside ml-14;
+    @apply list-decimal list-outside ml-12;
   }
 
   strong {
@@ -90,7 +90,7 @@
   }
 
   details {
-    @apply mb-8;
+    @apply mb-6;
   }
 
   nav,
