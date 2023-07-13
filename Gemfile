@@ -21,3 +21,8 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "dotenv"
 gem "webrick"
+
+# Lock jekyll-sass-converter to 2.x on Linux-musl
+if RUBY_PLATFORM =~ /linux-musl/
+  gem "jekyll-sass-converter", "~> 2.0"
+end
