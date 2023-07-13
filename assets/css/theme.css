@@ -61,7 +61,7 @@
   }
 
   table {
-    @apply mb-5 width: auto !important rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white;
+    @apply mb-5 width: auto rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white;
   }
 
   thead {
