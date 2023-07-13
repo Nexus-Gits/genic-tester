@@ -61,7 +61,7 @@
   }
 
   table {
-    @apply mb-6 w-auto rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white;
+    display: inline-table !important;
   }
 
   thead {
