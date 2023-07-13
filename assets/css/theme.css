@@ -82,7 +82,7 @@
   }
 
   ol li {
-    @apply list-decimal list-outside ml-12;
+    @apply list-decimal list-outside ml-14;
   }
 
   strong {
