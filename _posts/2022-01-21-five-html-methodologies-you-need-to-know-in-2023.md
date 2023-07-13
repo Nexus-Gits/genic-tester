@@ -6,6 +6,7 @@ image: /assets/tecroxy-images/vidiq_review.webp
 category: web
 tags:
   - Alternative
+  - web-development
 author: abhiraj
 ---
 
