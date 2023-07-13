@@ -61,7 +61,7 @@
   }
 
   table {
-    @apply mb-6 w-full rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white;
+    @apply mb-6 w-full rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white overflow-x-auto;
   }
 
   thead {
@@ -69,12 +69,12 @@
   }
 
   tbody tr:nth-child(even) {
-    @apply flex flex-col mb-4;
+    @apply rounded-md;
   }
 
   td,
   th {
-    @apply px-4 py-3 bg-gray-200 first:rounded-t-lg last:rounded-b-lg;
+    @apply px-2 py-1 text-center;
   }
 
   ul li {
