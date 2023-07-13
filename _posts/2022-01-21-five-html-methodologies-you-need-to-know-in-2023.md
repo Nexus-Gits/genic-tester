@@ -2,7 +2,7 @@
 layout: post
 title:  "5 html methodologies you need to know in 2023"
 excerpt: "CSS methodogies lets us author CSS in a way that allows us to develop, maintain and scale the front-end as a set of small, isolated modules."
-image: "https://user-images.githubusercontent.com/46792249/150502332-2a32ea09-672f-4d7d-935f-619130c53fd8.png"
+image: /assets/tecroxy-images/vidiq_review.webp
 category: web
 tags: ["beginners", "web-development"]
 author: abhiraj
