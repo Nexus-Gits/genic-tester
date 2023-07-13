@@ -78,7 +78,7 @@
   }
 
   ul li {
-    @apply list-disc list-outside ml-12;
+    @apply list-disc list-outside ml-14;
   }
 
   ol li {
@@ -90,7 +90,7 @@
   }
 
   details {
-    @apply mb-6;
+    @apply mb-8;
   }
 
   nav,
