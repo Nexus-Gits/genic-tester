@@ -61,7 +61,7 @@
   }
 
   table {
-    display: inline-table !important;
+    @apply mb-6 w-full rounded-xl bg-slate-200 dark:bg-slate-500 dark:text-white;
   }
 
   thead {
@@ -69,12 +69,12 @@
   }
 
   tbody tr:nth-child(even) {
-    @apply rounded-md;
+    @apply flex flex-col mb-4 sm:table-row;
   }
 
   td,
   th {
-    @apply px-2 py-1 text-center;
+    @apply px-4 py-3 bg-gray-200 first:rounded-t-lg last:rounded-b-lg sm:first:rounded-t-none sm:last:rounded-b-none sm:first:rounded-tl-lg sm:first:rounded-bl-lg sm:last:rounded-tr-lg sm:last:rounded-br-lg;
   }
 
   ul li {
