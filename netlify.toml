@@ -1,4 +1,0 @@
-# netlify.toml
-
-[context.production.environment]
-  JEKYLL_ENV = "production"
