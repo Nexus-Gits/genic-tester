@@ -51,13 +51,6 @@ layout: default
     {% endif %}
 
     <article class="p-6 md:p-8">
-      {% if page.audioId != blank and jekyll.environment == "production" %}
-      <div
-        class="mb-6"
-        id="audio-player"
-        data-audio-id="{{ page.audioId }}"
-      ></div>
-      {% endif %}
 
       <!-- prettier-ignore -->
       {% assign article = content | extlinks | optimize_images %}
