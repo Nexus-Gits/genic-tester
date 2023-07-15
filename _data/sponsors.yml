@@ -3,6 +3,6 @@
   sponsored: true
   description: "Amazon offers a variety of deals and discounts to make your online shopping experience more rewarding."
   logo:
-    light: "https://www.logo.wine/a/logo/Amazon_(company)/Amazon_(company)-Logo.wine.svg"
-    dark: "https://www.logo.wine/a/logo/Amazon_(company)/Amazon_(company)-Logo.wine.svg"
+    light: "/assets/images/sponsors/Amazon_affiliate.svg"
+    dark: "/assets/images/sponsors/Amazon_affiliate.svg"
 
