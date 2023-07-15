@@ -2,7 +2,7 @@
 
 Theme files for genicsblog.com
 
-**This is not a proper Jekyll theme**. This repo contains only the theme files that genicsblog.com's repo retrevies at GitHub action's runtime to build the site.
+**This is not a proper Jekyll theme**. This repo contains only the theme files that genicsblog.com's repo retrevies at GitHub action's runtime to build the site.s
 
 [![Powered by Vercel](https://genicsblog.com/assets/images/sponsors/vercel.svg)](https://vercel.com?utm_source=genicsblog&utm_campaign=oss)
 
