@@ -14,11 +14,10 @@ group :jekyll_plugins do
   gem "jekyll-auto-authors"
   gem "jekyll-url-metadata"
   gem "jekyll-include-cache"
-  gem "webrick"
 end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "dotenv"
-
+gem "webrick"
