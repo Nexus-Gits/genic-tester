@@ -25,7 +25,7 @@
       }
     });
 
-    {% if jekyll.environment == "development" %}
+    {% if jekyll.environment == "production" %}
     const path = window.location.pathname + window.location.search + window.location.hash;
     gtag("set", "page_path", path);
     {% endif %}
