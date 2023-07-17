@@ -25,7 +25,7 @@
       }
     });
 
-    {% if jekyll.environment == "development" %}
+    {% if jekyll.environment == "production" %}
     const path = window.location.pathname + window.location.search + window.location.hash;
     gtag("set", "page_path", path);
     {% endif %}
@@ -47,10 +47,10 @@
     if (comments) {
       const giscusConfig = {
         "src": "https://giscus.app/client.js",
-        "data-repo": "genicsblog/comments",
-        "data-repo-id": "R_kgDOG0-Vlw",
-        "data-category": "Announcements",
-        "data-category-id": "DIC_kwDOG0-Vl84CP8Dz",
+        "data-repo": 
+        "data-repo-id": 
+        "data-category": 
+        "data-category-id": 
         "data-mapping": "pathname",
         "data-reactions-enabled": "1",
         "data-emit-metadata": "0",
