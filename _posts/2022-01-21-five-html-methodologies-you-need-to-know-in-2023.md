@@ -12,7 +12,7 @@ author: abhiraj
 
 However, there are some key differences in features, pricindg, and apsproach. In this article, we’ll compare VidIQ and TubeBuddy in depth so you can determine which tool is the best fit for your YouTube channel.
 
-Here's a markdown block table comparing VidIQ and TubeBuddy at a glance:
+Here's a markdown blovck table comparing VidIQ and TubeBuddy at a glance:
 
 |  | VidIQ | TubeBuddy |
 | --- | --- | --- |
