@@ -6,7 +6,7 @@ description: >-
 baseurl: ""
 url: "https://genic-tester.vercel.app"
 permalink: /:title
-twitter_username: "genicsblog"
+twitter_username:
 github_username: "genicsblog"
 github_repo: "genicsblog/genicsblog.com"
 google_analytics: "G-KQJM9Z9N1Z"
