@@ -9,7 +9,6 @@ layout: none
         "category" : "{{ post.category }}",
         "tags"     : "{{ post.tags | join: ', ' | remove_chars }}",
         "url"      : "{{ site.baseurl }}{{ post.url }}",
-        "content"  : "{{ post.excerpt  }}"
         "date"     : "{{ post.date }}"
       } {% unless forloop.last %},{% endunless %}
     {% endunless %}
