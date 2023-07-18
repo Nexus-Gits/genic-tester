@@ -45,7 +45,6 @@
 {% endif %}
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="tecroxy.com" />
 {% if page.image %}
 <meta name="twitter:image" content="{{ page.image }}" />
 {% else %}
@@ -53,16 +52,6 @@
   property="twitter:image"
   content="{{ site.url }}{{ site.baseurl }}/assets/images/social/cover.jpg"
 />
-{% endif %}
-
-<!-- prettier-ignore -->
-{% if site.data.authors[page.author].links.twitter != blank %}
-<meta
-  name="twitter:creator"
-  content="{{ author.name }}"
-/>
-{% else %}
-<meta name="twitter:creator" content="@gourav_khunger" />
 {% endif %}
 
 <!-- prettier-ignore -->
