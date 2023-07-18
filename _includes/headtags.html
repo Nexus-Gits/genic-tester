@@ -45,7 +45,7 @@
 {% endif %}
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@genicsblog" />
+<meta name="twitter:site" content="tecroxy.com" />
 {% if page.image %}
 <meta name="twitter:image" content="{{ page.image }}" />
 {% else %}
@@ -59,7 +59,7 @@
 {% if site.data.authors[page.author].links.twitter != blank %}
 <meta
   name="twitter:creator"
-  content="@{{ site.data.authors[page.author].links.twitter }}"
+  content="{{ author.name }}"
 />
 {% else %}
 <meta name="twitter:creator" content="@gourav_khunger" />
