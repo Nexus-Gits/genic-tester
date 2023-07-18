@@ -7,19 +7,30 @@ layout: default
 {% if jekyll.environment == 'production' %}
   {% assign optimizeAvatar = site.img_src_prefix.avatar %}
 {% endif %}
+{%- capture hasNotice -%}
+{%- if page.notice != blank or page.original != blank or page.series != blank -%}true{%- endif -%}
+{%- endcapture -%}
 
 <!-- prettier-ignore -->
 {% include_cached infeed-ad.html environment=jekyll.environment sitemap=page.sitemap %}
 
 <section class="lg:flex lg:justify-center">
   <div class="content-area elevated">
+    {% if site.sponsor-notice %}
+    <div
+      style="background-color: {{ site.sponsor-notice.color }}"
+      class="notice{% if hasNotice == 'true' %} -mb-4 pt-4 pb-7{% else %} py-4{% endif %}"
+    >
+      {{ site.sponsor-notice.html }}
+    </div>
+    {% endif %}
     <!-- prettier-ignore -->
-    {% if page.notice != blank or page.original != blank or page.series != blank %}
-    <div class="notice">
+    {% if hasNotice == "true" %}
+    <div class="py-2 notice">
       <!-- prettier-ignore -->
       {% if page.original != blank %}
       {% assign host = page.original | hostname %}
-      <span class="text-base italic leading-8">
+      <span class="italic leading-8">
         Originally published at
         <a
           href="{{ page.original }}"
@@ -32,7 +43,7 @@ layout: default
 
       <!-- prettier-ignore -->
       {% if page.series %}
-      <span class="text-base leading-8">
+      <span class="leading-8">
         This post is a part of the series
         <a href="{{ site.baseurl }}/series/{{ page.series }}" target="_blank">
           {{ page.series | split:"-" | join:" " | capitalize_all }}
@@ -43,7 +54,7 @@ layout: default
       <!-- prettier-ignore -->
       {% if page.notice != blank %}
       {% if page.series != blank %}<br />{% endif %}
-      <span class="text-base leading-8">
+      <span class="leading-8">
         {{ page.notice | markdownify }}
       </span>
       {% endif %}
@@ -74,6 +85,17 @@ layout: default
       class="px-6 pb-6 md:px-8 md:pb-8 flex flex-col items-center rounded-bl-2xl rounded-br-2xl"
     >
       <p class="text-center mb-4">
+        Join discussions at
+        <a
+          href="https://discord.genicsblog.com"
+          target="_blank"
+          class="cta-link"
+        >
+          our discord server &gt;
+        </a>
+
+        <br />
+
         Did you learn something new? Add a comment below and spread the word!
       </p>
 
@@ -221,6 +243,9 @@ layout: default
       <figure
         class="sponsor elevated{% if forloop.last == true %} lg:sticky lg:top-24{% endif %}"
       >
+        {% if element.customHtml %}
+          {{ element.customHtml }}
+        {% else %}
         <img
           src="{{ element.logo.dark }}"
           class="logo hidden dark:block"
@@ -250,6 +275,7 @@ layout: default
             Check it out &gt;
           </a>
         </div>
+        {% endif %}
       </figure>
       <!-- prettier-ignore -->
       {% endfor %}
@@ -263,7 +289,7 @@ layout: default
 <br />
 {% include_cached cta.html %}
 
-{% if jekyll.environment == 'development' and page.comments != false and page.sitemap != false %}
+{% if jekyll.environment == 'production' and page.comments != false and page.sitemap != false %}
 <h1 class="mt-12 mx-6 lg:mx-10 xl:mx-14">Comments</h1>
 
 <section class="lg:flex lg:justify-center">
