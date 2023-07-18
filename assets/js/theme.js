@@ -58,21 +58,6 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-const sticky = navbar.offsetTop;
-
-const setStickyness = () => {
-  const navbar = document.getElementById("navbar");
-  const banner = document.getElementsByClassName("banner")[0];
-
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("fixed");
-    banner.classList.add("mt-6");
-  } else {
-    navbar.classList.remove("fixed");
-    banner.classList.remove("mt-6");
-  }
-};
-
 const toggleNav = () => {
   const menuButton = document.getElementById("menu-btn");
   const mobileNav = document.getElementById("mobile-nav");
