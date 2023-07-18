@@ -66,10 +66,10 @@ const setStickyness = () => {
 
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("fixed");
-    banner.classList.add("mt-16");
+    banner.classList.add("mt-6");
   } else {
     navbar.classList.remove("fixed");
-    banner.classList.remove("mt-16");
+    banner.classList.remove("mt-6");
   }
 };
 
