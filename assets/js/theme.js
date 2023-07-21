@@ -43,7 +43,6 @@ const setTheme = () => {
   }
 
   setGiscusTheme();
-  setAudioPlayerTheme();
 };
 
 document.addEventListener("keydown", function (e) {
