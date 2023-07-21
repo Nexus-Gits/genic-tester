@@ -31,12 +31,6 @@ const setGiscusTheme = () => {
   }
 };
 
-const setAudioPlayerTheme = () => {
-  if(BeyondWords.Player.instances()[0]){
-    BeyondWords.Player.instances()[0].highlightColor = isDark() ? DARK_HIGHLIGHT : LIGHT_HIGHLIGHT; 
-  }
-}
-
 const setTheme = () => {
   const themeToggleIcon = document.getElementById("theme-toggle-icon");
 
