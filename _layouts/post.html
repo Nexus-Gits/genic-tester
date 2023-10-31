@@ -62,7 +62,7 @@ layout: default
     {% endif %}
 
     <article class="p-6 md:p-8">
-      {% if page.audioId != blank and jekyll.environment == "development" %}
+      {% if page.audioId != blank and jekyll.environment == "production" %}
       <div
         class="mb-6"
         id="audio-player"
@@ -229,23 +229,6 @@ layout: default
       </div>
     </figure>
     {% else %}
-    <div class="adverts-container">
-      <figure class="advert elevated">
-        {% if jekyll.environment != 'production' %}
-        <p>This is an adslot that will be visible in production website.</p>
-        <!-- prettier-ignore -->
-        {% else %}
-        {% include_cached display-ad.html environment=jekyll.environment sitemap=page.sitemap %}
-        {% endif %}
-      </figure>
-
-      {% for element in site.data.sponsors %}
-      <figure
-        class="sponsor elevated{% if forloop.last == true %} lg:sticky lg:top-24{% endif %}"
-      >
-        {% if element.customHtml %}
-          {{ element.customHtml }}
-        {% else %}
         <img
           src="{{ element.logo.dark }}"
           class="logo hidden dark:block"
